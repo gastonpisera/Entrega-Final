@@ -128,3 +128,33 @@ terminarBtn.addEventListener("click", () => {
     select1.value = ""
     select2.value = ""
 });
+
+const app = document.getElementById('app');
+
+fetch('/lista.json').then((response) => {
+    console.log(response)
+    return response.json()
+}).then((data) => {
+    console.log([...data, ...array]);
+})
+.catch((error) => {
+    console.log(error)
+});
+
+// const getData = async () => {
+//     try {
+//         const response = await fetch('./lista.json');
+//         const data = await response.json();
+//         console.log(data);
+//     } catch (error) {
+//         console.log(error);
+//     }
+// }
+
+// getData();
+
+array.forEach((item) => {
+  const div = document.createElement('div');
+  div.innerHTML = item;
+  app.appendChild(div);
+});

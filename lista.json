@@ -1,0 +1,22 @@
+[
+    {
+        "puesto":"1",
+        "nombre":"Juan",
+        "apellido":"Perez"
+    },
+    {
+        "puesto":"2",
+        "nombre":"Ricardo",
+        "apellido":"Ramirez"
+    },
+    {
+        "puesto":"3",
+        "nombre":"Enzo",
+        "apellido":"Fernandez"
+    },
+    {
+        "puesto":"4",
+        "nombre":"Martin",
+        "apellido":"Insaurralde"
+    }
+]
